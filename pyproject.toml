@@ -6,6 +6,7 @@ authors = ["José Ignacio Amelivia Santiago <hello@namelivia.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
+python = "^3.10"
 moviepy = "==1.0.3"
 srt = "==3.5.2"
 mastodon-py = "*"
