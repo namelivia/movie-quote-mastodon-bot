@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-moviepy = "==1.0.3"
+moviepy = "==2.1.2"
 srt = "==3.5.2"
 mastodon-py = "*"
 Pillow = "==9.5.0"
