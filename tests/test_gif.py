@@ -1,10 +1,10 @@
 from unittest import TestCase
-from movie_quote_twitter_bot.gif import Gif
+from movie_quote_mastodon_bot.gif import Gif
 import mock
 
 
 class TestGif(TestCase):
-    @mock.patch("movie_quote_twitter_bot.gif.CompositeVideoClip")
+    @mock.patch("movie_quote_mastodon_bot.gif.CompositeVideoClip")
     def test_generating_composite_gif(self, m_composite_video_clip):
         composite_video_mock = mock.Mock()
         output_uri = "/tmp/output"

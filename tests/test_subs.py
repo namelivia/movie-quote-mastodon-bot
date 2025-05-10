@@ -1,12 +1,12 @@
 from unittest import TestCase
-from movie_quote_twitter_bot.subs import Subs
+from movie_quote_mastodon_bot.subs import Subs
 import mock
 
 
 class TestSubs(TestCase):
-    @mock.patch("movie_quote_twitter_bot.subs.srt.parse")
-    @mock.patch("movie_quote_twitter_bot.subs.random.choice")
-    @mock.patch("movie_quote_twitter_bot.subs.open")
+    @mock.patch("movie_quote_mastodon_bot.subs.srt.parse")
+    @mock.patch("movie_quote_mastodon_bot.subs.random.choice")
+    @mock.patch("movie_quote_mastodon_bot.subs.open")
     def test_getting_a_random_sub(self, m_open, m_choice, m_parse):
         filepath = "/tmp/subs"
         encoding = "utf-8"

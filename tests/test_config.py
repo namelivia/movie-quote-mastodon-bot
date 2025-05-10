@@ -1,5 +1,5 @@
 from unittest import TestCase
-from movie_quote_twitter_bot.config import Config
+from movie_quote_mastodon_bot.config import Config
 
 
 class TestConfig(TestCase):
@@ -10,11 +10,6 @@ class TestConfig(TestCase):
             "SUBS_ENCODING": "utf-8",
             "VIDEO_URI": "/tmp/video",
             "OUTPUT_URI": "/tmp/output",
-            "TWITTER_ENABLED": "false",
-            "TWITTER_CONSUMER_KEY": "twitterconsumerkey",
-            "TWITTER_CONSUMER_SECRET": "twitterconsumersecret",
-            "TWITTER_ACCESS_TOKEN_KEY": "twitteraccesstokenkey",
-            "TWITTER_ACCESS_TOKEN_SECRET": "twitteraccesstokensecret",
             "MASTODON_ENABLED": "True",
             "MASTODON_CLIENT_ID": "mastodonclientid",
             "MASTODON_CLIENT_SECRET": "mastodonclientsecret",
@@ -29,5 +24,4 @@ class TestConfig(TestCase):
         self.assertEqual("/tmp/subs", config.get("subs_uri"))
         self.assertEqual(3, config.get("idle_period"))
         self.assertEqual(20, config.get("text_size"))
-        self.assertEqual(False, config.get("twitter_enabled"))
         self.assertEqual(True, config.get("mastodon_enabled"))

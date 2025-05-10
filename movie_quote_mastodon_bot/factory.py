@@ -2,7 +2,6 @@ from .bot import Bot
 from .subs import Subs
 from .text_clip import TextClip
 from .video_clip import VideoClip
-from .twitter import Twitter
 from .mastodon import MastodonAPI
 from .gif import Gif
 
@@ -19,14 +18,6 @@ class Factory:
             self.config.get("text_font"),
         )
         video_clip = VideoClip(self.config.get("video_uri"))
-        twitter = Twitter(
-            self.config.get("twitter_enabled"),
-            self.config.get("twitter_consumer_key"),
-            self.config.get("twitter_consumer_secret"),
-            self.config.get("twitter_access_token_key"),
-            self.config.get("twitter_access_token_secret"),
-            self.config.get("output_uri"),
-        )
         mastodon = MastodonAPI(
             self.config.get("mastodon_enabled"),
             self.config.get("mastodon_client_id"),
@@ -37,4 +28,4 @@ class Factory:
             self.config.get("output_uri"),
         )
         gif = Gif(self.config.get("output_uri"))
-        return Bot(subs, text_clip, video_clip, twitter, mastodon, gif)
+        return Bot(subs, text_clip, video_clip, mastodon, gif)

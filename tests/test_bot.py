@@ -1,5 +1,5 @@
 from unittest import TestCase
-from movie_quote_twitter_bot.bot import Bot
+from movie_quote_mastodon_bot.bot import Bot
 import mock
 
 
@@ -8,14 +8,12 @@ class TestBot(TestCase):
         self.subs = mock.Mock()
         self.text_clip = mock.Mock()
         self.video_clip = mock.Mock()
-        self.twitter = mock.Mock()
         self.mastodon = mock.Mock()
         self.gif = mock.Mock()
         self.bot = Bot(
             self.subs,
             self.text_clip,
             self.video_clip,
-            self.twitter,
             self.mastodon,
             self.gif,
         )
@@ -35,5 +33,4 @@ class TestBot(TestCase):
         self.gif.generate_composite_gif.assert_called_once_with(
             video_clip_mock, text_clip_mock
         )
-        self.twitter.post_gif.assert_called_once_with(quote_mock.content)
         self.mastodon.post_gif.assert_called_once_with(quote_mock.content)

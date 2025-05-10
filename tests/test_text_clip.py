@@ -1,11 +1,11 @@
 from unittest import TestCase
-from movie_quote_twitter_bot.text_clip import TextClip
+from movie_quote_mastodon_bot.text_clip import TextClip
 import mock
 from datetime import datetime, timedelta
 
 
 class TestTextClip(TestCase):
-    @mock.patch("movie_quote_twitter_bot.text_clip._TextClip")
+    @mock.patch("movie_quote_mastodon_bot.text_clip._TextClip")
     def test_generating_the_quote_text(self, m_text_clip):
         size = 20
         color = "red"
