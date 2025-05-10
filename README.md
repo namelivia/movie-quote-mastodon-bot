@@ -10,11 +10,11 @@ This is a Python script I made one day after work, it will pick random quotes fr
 ## Requeriments
 
 * python3.7
-* pipenv
+* poetry
 
 ## Installation
 
-Clone the project, navigate to its root folder and execute `pipenv install` for installing it's dependencies.
+Clone the project, navigate to its root folder and execute `poetry install` for installing it's dependencies.
 
 ## Configuration
 
@@ -37,11 +37,11 @@ To execute the script the following environment variables must be set.
 
 ## Usage
 
-Just execute `pipenv run python main.py` and if everything is properly configured, a random movie quote will be posted to your Mastodon accounts.
+Just execute `poetry run python main.py` and if everything is properly configured, a random movie quote will be posted to your Mastodon accounts.
 
 ## Testing
 
-For executing the tests just execute `pipenv run pytest` on the project's root folder.
+For executing the tests just execute `poetry run pytest` on the project's root folder.
 
 ## Docker deployment
 

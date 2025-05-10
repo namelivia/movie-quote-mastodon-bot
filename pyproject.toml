@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "movie_quote_mastodon_bot"
+version = "1.0.0"
+description = "This is a small python bot for posting movie quotes"
+authors = ["José Ignacio Amelivia Santiago <hello@namelivia.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+moviepy = "==1.0.3"
+srt = "==3.5.2"
+mastodon-py = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+mock = "*"
+pytest-cov = "*"
+codecov = "*"
+black = "*"
+pre-commit = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
