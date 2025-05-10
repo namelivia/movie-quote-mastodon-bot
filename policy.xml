@@ -1,0 +1,4 @@
+<policymap>
+  <policy domain="coder" rights="read|write" pattern="MVG" />
+</policymap>
+

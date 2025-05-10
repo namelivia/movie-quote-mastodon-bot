@@ -1,5 +1,8 @@
 # TODO: I've been unable to make this work with alpine because of problems with pybind11
 FROM python:3.11 AS builder
+
+COPY policy.xml /etc/ImageMagick-6/policy.xml
+
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
 	ffmpeg\
