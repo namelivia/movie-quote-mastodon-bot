@@ -1,3 +1,3 @@
 #!/bin/bash
-pipenv run pytest --cov-report=xml --cov=movie_quote_twitter_bot # && \
+pipenv run pytest --cov-report=xml --cov=movie_quote_mastodon_bot # && \
 # pipenv run codecov --commit=$1 -t $2

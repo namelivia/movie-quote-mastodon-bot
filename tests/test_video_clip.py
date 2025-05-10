@@ -1,10 +1,10 @@
 from unittest import TestCase
-from movie_quote_twitter_bot.video_clip import VideoClip
+from movie_quote_mastodon_bot.video_clip import VideoClip
 import mock
 
 
 class TestVideoClip(TestCase):
-    @mock.patch("movie_quote_twitter_bot.video_clip.VideoFileClip")
+    @mock.patch("movie_quote_mastodon_bot.video_clip.VideoFileClip")
     def test_generating_a_quote_video(self, m_video):
         video_uri = "/tmp/video"
         video_clip = VideoClip(video_uri)

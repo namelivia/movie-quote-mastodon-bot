@@ -1,5 +1,5 @@
-from movie_quote_twitter_bot.factory import Factory
-from movie_quote_twitter_bot.config import Config
+from movie_quote_mastodon_bot.factory import Factory
+from movie_quote_mastodon_bot.config import Config
 import sentry_sdk
 import time
 import os

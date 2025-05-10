@@ -14,7 +14,6 @@ pre-commit = "*"
 [packages]
 moviepy = "==1.0.3"
 srt = "==3.5.2"
-python-twitter = "*"
 sentry-sdk = "*"
 mastodon-py = "*"
 

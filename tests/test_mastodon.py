@@ -1,10 +1,10 @@
 from unittest import TestCase
-from movie_quote_twitter_bot.mastodon import MastodonAPI
+from movie_quote_mastodon_bot.mastodon import MastodonAPI
 import mock
 
 
 class TestMastodon(TestCase):
-    @mock.patch("movie_quote_twitter_bot.mastodon.Mastodon")
+    @mock.patch("movie_quote_mastodon_bot.mastodon.Mastodon")
     def test_posting_a_gif(self, m_api_factory):
         mastodon_api_mock = mock.Mock()
         m_api_factory.return_value = mastodon_api_mock
