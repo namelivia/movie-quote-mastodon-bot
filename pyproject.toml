@@ -10,6 +10,7 @@ python = "^3.10"
 moviepy = "==1.0.3"
 srt = "==3.5.2"
 mastodon-py = "*"
+Pillow = "==9.5.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "*"
