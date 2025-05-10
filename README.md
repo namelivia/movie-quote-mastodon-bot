@@ -34,7 +34,6 @@ To execute the script the following environment variables must be set.
 * `TEXT_SIZE`: Font size for the text that will be displayed e.g. `18`
 * `TEXT_FONT`: Font for the text that will be displayed e.g. `FreeSans-Negrita`
 * `IDLE_PERIOD`: The number of seconds the script will wait before executing. e.g. `900`
-* `SENTRY_URL`: If set errors will be sent to [Sentry](https://sentry.io).
 
 ## Usage
 
